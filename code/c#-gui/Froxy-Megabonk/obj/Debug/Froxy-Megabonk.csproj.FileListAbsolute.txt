@@ -1,0 +1,12 @@
+C:\Users\TUĞRUL YILDIZ\Documents\SharpDevelop Projects\Froxy-Megabonk\Froxy-Megabonk\obj\Debug\Froxy-Megabonk.csprojResolveAssemblyReference.cache
+C:\Users\TUĞRUL YILDIZ\Documents\SharpDevelop Projects\Froxy-Megabonk\Froxy-Megabonk\bin\Debug\Froxy-Megabonk.exe.config
+C:\Users\TUĞRUL YILDIZ\Documents\SharpDevelop Projects\Froxy-Megabonk\Froxy-Megabonk\bin\Debug\Froxy-Megabonk.exe
+C:\Users\TUĞRUL YILDIZ\Documents\SharpDevelop Projects\Froxy-Megabonk\Froxy-Megabonk\bin\Debug\Froxy-Megabonk.pdb
+C:\Users\TUĞRUL YILDIZ\Documents\SharpDevelop Projects\Froxy-Megabonk\Froxy-Megabonk\obj\Debug\Froxy-Megabonk.exe
+C:\Users\TUĞRUL YILDIZ\Documents\SharpDevelop Projects\Froxy-Megabonk\Froxy-Megabonk\obj\Debug\Froxy-Megabonk.pdb
+C:\Users\TUĞRUL YILDIZ\Desktop\MegaBonk_cheat\code\c#-gui\Froxy-Megabonk\bin\Debug\Froxy-Megabonk.exe.config
+C:\Users\TUĞRUL YILDIZ\Desktop\MegaBonk_cheat\code\c#-gui\Froxy-Megabonk\bin\Debug\Froxy-Megabonk.exe
+C:\Users\TUĞRUL YILDIZ\Desktop\MegaBonk_cheat\code\c#-gui\Froxy-Megabonk\bin\Debug\Froxy-Megabonk.pdb
+C:\Users\TUĞRUL YILDIZ\Desktop\MegaBonk_cheat\code\c#-gui\Froxy-Megabonk\obj\Debug\Froxy-Megabonk.csprojResolveAssemblyReference.cache
+C:\Users\TUĞRUL YILDIZ\Desktop\MegaBonk_cheat\code\c#-gui\Froxy-Megabonk\obj\Debug\Froxy-Megabonk.exe
+C:\Users\TUĞRUL YILDIZ\Desktop\MegaBonk_cheat\code\c#-gui\Froxy-Megabonk\obj\Debug\Froxy-Megabonk.pdb

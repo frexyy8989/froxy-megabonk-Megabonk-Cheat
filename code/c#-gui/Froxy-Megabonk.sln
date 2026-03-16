@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Froxy-Megabonk", "Froxy-Megabonk\Froxy-Megabonk.csproj", "{56EDEC4F-CD01-4772-BF84-424B2FBDB2AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56EDEC4F-CD01-4772-BF84-424B2FBDB2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56EDEC4F-CD01-4772-BF84-424B2FBDB2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56EDEC4F-CD01-4772-BF84-424B2FBDB2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56EDEC4F-CD01-4772-BF84-424B2FBDB2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

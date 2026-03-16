@@ -1,0 +1,15 @@
+﻿<AddIn name        = "Froxy-Megabonk"
+       author      = "Tugrul"
+       url         = ""
+       description = "TODO: Put description here">
+	
+	<Runtime>
+		<Import assembly = "Froxy-Megabonk.dll"/>
+	</Runtime>
+	
+	<Path name = "/Workspace/Tools">
+		<MenuItem id = "Froxy-MegabonkCommand1"
+		          label = "Froxy-Megabonk"
+		          class = "Froxy_Megabonk.ToolCommand1"/>
+	</Path>
+</AddIn>
