@@ -71,6 +71,7 @@ namespace Froxy_Megabonk
             SetupInterface();
             SetupTimers();
             this.Load += new EventHandler(MainFormLoad);
+            this.Icon = new System.Drawing.Icon("icon.ico");
         }
 
         private void InitializeFormSettings()
@@ -84,7 +85,11 @@ namespace Froxy_Megabonk
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
-
+		protected override void OnFormClosing(FormClosingEventArgs e)
+		{
+		    base.OnFormClosing(e);
+		    Environment.Exit(0);
+		}
         private void SetupInterface()
         {
             Label lblLogo = new Label { Text = "FROXY-MEGABONK", Font = new Font("Segoe UI Semibold", 18, FontStyle.Bold), ForeColor = Color.FromArgb(0, 255, 255), Location = new Point(0, 10), Size = new Size(410, 35), TextAlign = ContentAlignment.MiddleCenter };
@@ -159,6 +164,5 @@ namespace Froxy_Megabonk
         private IntPtr GetFinalAddress(IntPtr bAddr, int[] offsets) { byte[] b = new byte[8]; int br; if (!ReadProcessMemory(_processHandle, bAddr, b, 8, out br)) return IntPtr.Zero; IntPtr cur = (IntPtr)BitConverter.ToInt64(b, 0); for (int i = 0; i < offsets.Length - 1; i++) { if (cur == IntPtr.Zero) return IntPtr.Zero; if (!ReadProcessMemory(_processHandle, (IntPtr)((long)cur + offsets[i]), b, 8, out br)) return IntPtr.Zero; cur = (IntPtr)BitConverter.ToInt64(b, 0); } return (IntPtr)((long)cur + offsets[offsets.Length - 1]); }
         void attach() { Process[] procs = Process.GetProcessesByName("Megabonk"); if (procs.Length == 0) { lblStatus.ForeColor = Color.Orange; lblStatus.Text = "DURUM: Oyun Bulunamadı!"; return; } _processHandle = OpenProcess(PROCESS_ALL_ACCESS, false, procs[0].Id); _gameAssemblyAddress = IntPtr.Zero; _unityPlayerAddress = IntPtr.Zero; foreach (ProcessModule m in procs[0].Modules) { if (m.ModuleName == "GameAssembly.dll") _gameAssemblyAddress = m.BaseAddress; if (m.ModuleName == "UnityPlayer.dll") _unityPlayerAddress = m.BaseAddress; } if (_gameAssemblyAddress != IntPtr.Zero) { lblStatus.ForeColor = Color.LimeGreen; lblStatus.Text = "DURUM: Bağlantı Tamam!"; } }
         void MainFormLoad(object s, EventArgs e) { attach(); }
-        protected override void OnFormClosing(FormClosingEventArgs e) { Process.GetCurrentProcess().Kill(); }
     }
 }
