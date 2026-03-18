@@ -19,7 +19,7 @@
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <WarningLevel>4</WarningLevel>
-    <ApplicationIcon>..\..\..\..\pp.ico</ApplicationIcon>
+    <ApplicationIcon>..\..\..\pp.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x64</PlatformTarget>
@@ -71,10 +71,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\..\..\..\pp.ico">
-      <Link>pp.ico</Link>
-    </Resource>
     <None Include="app.config" />
+    <EmbeddedResource Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
